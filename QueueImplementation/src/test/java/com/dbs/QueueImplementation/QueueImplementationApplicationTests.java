@@ -10,34 +10,7 @@ import org.springframework.test.context.junit4.SpringRunner;
 public class QueueImplementationApplicationTests {
 
 	@Test
-	public void testMessageAdd() {
-		
-	}
-	
-	@Test
-	public void testMessagePop() {
-		
-	}
-	
-	@Test
-	public void testQueueAdd() {
-		
-	}
-	
-	@Test
-	public void testQueuePop() {
-		
-	}
-	
-	
-	@Test
-	public void testQueueFull() {
-		
-	}
-	
-	@Test
-	public void testQueueEmpty() {
-		
+	public void contextLoads() {
 	}
 
 }

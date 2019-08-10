@@ -1,5 +1,6 @@
 package com.dbs.QueueImplementation.service;
 
+import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
 
 import com.dbs.QueueImplementation.model.Queue;
@@ -7,4 +8,6 @@ import com.dbs.QueueImplementation.model.Queue;
 public interface QueueService {
 
 	public Queue addQueue(@RequestBody Queue queue);
+	
+	public boolean isQueueFull(int id);
 }
