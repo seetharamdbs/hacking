@@ -1,0 +1,11 @@
+
+.metadata/.lock
+*.index
+*.prefs
+*.xmi
+*.xml
+*.xml
+*.log
+.metadata/.log
+*.properties
+*.ini
