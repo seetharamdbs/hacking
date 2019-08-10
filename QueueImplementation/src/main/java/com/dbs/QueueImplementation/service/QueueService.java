@@ -16,4 +16,6 @@ public interface QueueService {
 	public boolean isQueueEmpty(int id);
 	
 	public List<Queue> getAllQueues();
+	
+	public String deleteQueue(@PathVariable int id);
 }

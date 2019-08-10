@@ -42,4 +42,9 @@ public class QueueController {
 	public List<Queue> getAllQueues(){
 		return queueService.getAllQueues();
 	}
+	
+	@RequestMapping(value="/queue/deletequeue/{id}",method=RequestMethod.POST)
+	public String deleteQueue(@PathVariable int id){
+		return queueService.deleteQueue(id);
+	}
 }

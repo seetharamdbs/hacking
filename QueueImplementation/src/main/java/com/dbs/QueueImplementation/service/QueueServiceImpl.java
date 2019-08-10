@@ -5,6 +5,7 @@ import java.util.Optional;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.web.bind.annotation.PathVariable;
 
 import com.dbs.QueueImplementation.dao.MessageDao;
 import com.dbs.QueueImplementation.dao.QueueDao;
@@ -62,4 +63,17 @@ public class QueueServiceImpl implements QueueService{
 		
 	}
 	
+	public String deleteQueue(@PathVariable int id){
+		
+		try{
+			Optional<Queue> queue = queueDao.findById(id);
+			if(!queue.isPresent()){
+				return "Given queue Id doesn't exist";
+			}
+			queueDao.deleteById(id);
+		}catch (Exception e) {
+			return "exception occured in deleting queue";
+		}
+		return "Queue successfully deleted";
+	}
 }

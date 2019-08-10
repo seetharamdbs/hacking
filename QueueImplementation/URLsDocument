@@ -15,5 +15,7 @@ http://localhost:8080/queue/isqueueempty/1  (POST)
 
 http://localhost:8080/queue/getallqueues  (GET)
 
+http://localhost:8080/queue/deletequeue/1 (POST)
+
 Messages Services
 -----------------------------------------------
