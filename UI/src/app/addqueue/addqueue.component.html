@@ -1,6 +1,6 @@
 <div *ngIf="isAddQueue">
   <p *ngIf="error"> Name and Size should not be empty</p>
-  Name :<input type="text" (ngModel) = "name">
-  Size :<input type="text" (ngModel) = "size">
+  Name :<input type="text" [(ngModel)] = "name">
+  Size :<input type="text" [(ngModel)] = "size">
 <button (click) = "add()">Submit</button>
 </div>

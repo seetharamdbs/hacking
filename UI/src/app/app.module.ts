@@ -7,6 +7,8 @@ import { FirstComponent } from './first/first.component';
 import { AddqueueComponent } from './addqueue/addqueue.component';
 import { QueuelistComponent } from './queuelist/queuelist.component';
 import { HttpClientModule } from '@angular/common/http';
+import { FormsModule } from '@angular/forms';
+
 
 
 
@@ -21,6 +23,7 @@ import { HttpClientModule } from '@angular/common/http';
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
