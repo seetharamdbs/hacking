@@ -1,5 +1,7 @@
 package com.dbs.QueueImplementation.controller;
 
+import java.util.List;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestBody;
@@ -34,5 +36,10 @@ public class QueueController {
 	@RequestMapping(value="/queue/isqueueempty/{id}",method=RequestMethod.POST)
 	public boolean isQueueEmpty(@PathVariable int id){
 		return queueService.isQueueEmpty(id);
+	}
+	
+	@RequestMapping(value="/queue/getallqueues",method=RequestMethod.GET)
+	public List<Queue> getAllQueues(){
+		return queueService.getAllQueues();
 	}
 }
