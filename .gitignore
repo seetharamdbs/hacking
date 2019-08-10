@@ -9,3 +9,9 @@
 .metadata/.log
 *.properties
 *.ini
+*.version
+.metadata/.plugins/org.eclipse.jdt.core/externalFilesCache
+*.resources
+*.dat
+.metadata/.plugins/org.eclipse.jdt.core/assumedExternalFilesCache
+.metadata/.plugins/org.eclipse.jdt.core/nonChainingJarsCache
