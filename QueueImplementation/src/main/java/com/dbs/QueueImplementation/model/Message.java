@@ -37,6 +37,10 @@ public class Message {
 	public void setQueue(Queue queue) {
 		this.queue = queue;
 	}
+	@Override
+	public String toString() {
+		return "Message [id=" + id + ", msgBody=" + msgBody + ", queue=" + queue + "]";
+	}
 	
 
 }

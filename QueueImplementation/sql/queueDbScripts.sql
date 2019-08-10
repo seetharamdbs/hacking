@@ -7,4 +7,4 @@ create table dbs.queue (
 create table dbs.message (
 			id integer(10) not null AUTO_INCREMENT,
 			msg_body varchar(255),
-			queue_id integer,primary key (id));
+			queue_id integer,primary key (id),foreign key(queue_id) references queue.id);

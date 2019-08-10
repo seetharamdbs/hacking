@@ -7,6 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
+import com.dbs.QueueImplementation.dto.MessageDTO;
 import com.dbs.QueueImplementation.model.Message;
 import com.dbs.QueueImplementation.service.MessageService;
 
@@ -18,12 +19,9 @@ public class MessageController {
 	private MessageService messageService;
 	
 	@RequestMapping(value="/message/add",method=RequestMethod.POST)
-	public Message getMessage(@RequestBody Message message) {
-		
+	public MessageDTO getMessage(@RequestBody Message message) {
 		
 		return messageService.addMessage(message);
-		
-		
 	}
 	
 }

@@ -1,5 +1,7 @@
 package com.dbs.QueueImplementation.dto;
 
+import org.springframework.stereotype.Component;
+
 import com.dbs.QueueImplementation.model.Queue;
 
 
@@ -9,6 +11,9 @@ public class MessageDTO {
 	private String msgBody;
 	
 	private Queue queue;
+	
+	private String status;
+	private String errorMessage;
 	
 	public int getId() {
 		return id;
@@ -28,4 +33,17 @@ public class MessageDTO {
 	public void setQueue(Queue queue) {
 		this.queue = queue;
 	}
+	public String getStatus() {
+		return status;
+	}
+	public void setStatus(String status) {
+		this.status = status;
+	}
+	public String getErrorMessage() {
+		return errorMessage;
+	}
+	public void setErrorMessage(String errorMessage) {
+		this.errorMessage = errorMessage;
+	}
+	
 }
