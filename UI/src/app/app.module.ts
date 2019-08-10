@@ -4,19 +4,23 @@ import { NgModule } from '@angular/core';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
-import { QueuelistComponent } from './queuelist/queuelist.component';
 import { AddqueueComponent } from './addqueue/addqueue.component';
+import { QueuelistComponent } from './queuelist/queuelist.component';
+import { HttpClientModule } from '@angular/common/http';
+
+
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    QueuelistComponent,
-    AddqueueComponent
+    AddqueueComponent,
+    QueuelistComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule,
   ],
   providers: [],
   bootstrap: [AppComponent]
