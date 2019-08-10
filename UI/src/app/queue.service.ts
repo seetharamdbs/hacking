@@ -22,4 +22,10 @@ export class QueueService {
     return this.http.post('http://10.10.0.237:8080/queue/addqueueandgetall', body, headers ).pipe(map((response: any) => response));
 
   }
+
+  getAll():Observable<any>{
+    let headers =  {headers: new  HttpHeaders({ 'Content-Type': 'application/json'})};
+    return this.http.get('http://10.10.0.237:8080/queue/getallqueues', headers ).pipe(map((response: any) => response));
+
+  }
 }

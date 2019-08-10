@@ -14,11 +14,17 @@ export class AddqueueComponent implements OnInit {
 
   name:string;
   size:number;
-  list:list[]=[{name:'Akhil',size:1,id:1},{name:'queue',size:2,id:2}]
+  list:list[];
 
   constructor(private service: QueueService) { }
 
   ngOnInit() {
+
+    this.service.getAll().subscribe(
+      (data) => 
+        
+        this.list = data
+    );
   }
 
   add() {
