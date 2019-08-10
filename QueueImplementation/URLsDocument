@@ -28,3 +28,11 @@ http://localhost:8080/queue/checkqueuesize  (GET)
 
 Messages Services
 -----------------------------------------------
+localhost:8080/message/add (POST)
+{
+	
+	
+	"msgBody": "message9"
+}
+
+Response
