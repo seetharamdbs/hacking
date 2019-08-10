@@ -6,4 +6,5 @@ import com.dbs.QueueImplementation.model.Queue;
 
 public interface QueueDao extends JpaRepository<Queue, Integer> {
 
+	
 }

@@ -1,0 +1,13 @@
+
+
+Queue Services
+-----------------------------------------------
+http://localhost:8080/queue/addqueue  (POST)
+
+{
+"queueName":"queue2",
+"size":200
+}
+
+Messages Services
+-----------------------------------------------
