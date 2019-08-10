@@ -35,4 +35,11 @@ localhost:8080/message/add (POST)
 	"msgBody": "message9"
 }
 
-Response
+localhost:8080/message/add/getAll (POST)
+{
+	
+	
+	"msgBody": "message9"
+}
+
+
