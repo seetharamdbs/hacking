@@ -19,6 +19,7 @@
 </ul> -->
 
 <h2 style="text-align: center">Messaging Queue</h2>
-<button style="padding: 20px" on>Add</button>
+<button style="padding: 20px" (click)="isAddQueue= true">Add</button>
+<app-addqueue [isAddQueue] ="isAddQueue"></app-addqueue>
 
 <!-- <router-outlet></router-outlet> -->
