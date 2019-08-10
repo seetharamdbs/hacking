@@ -17,5 +17,12 @@ http://localhost:8080/queue/getallqueues  (GET)
 
 http://localhost:8080/queue/deletequeue/1 (POST)
 
+http://localhost:8080/queue/addqueueandgetall  (POST)
+
+{
+"queueName":"queue2",
+"size":200
+}
+
 Messages Services
 -----------------------------------------------

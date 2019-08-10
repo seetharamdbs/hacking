@@ -49,4 +49,12 @@ public class QueueController {
 	public String deleteQueue(@PathVariable int id){
 		return queueService.deleteQueue(id);
 	}
+	
+	@RequestMapping(value="/queue/addqueueandgetall",method=RequestMethod.POST)
+	public List<Queue> addQueueAndGetInfo(@RequestBody Queue queue){
+		if(queue.getQueueName()!=null && queue.getQueueName().trim().length()>0 && queue.getSize()>0){
+			 queueService.addQueue(queue);
+		} 
+		return queueService.getAllQueues();
+	}
 }
