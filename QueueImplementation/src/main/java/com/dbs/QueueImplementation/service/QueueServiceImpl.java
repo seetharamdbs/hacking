@@ -76,4 +76,8 @@ public class QueueServiceImpl implements QueueService{
 		}
 		return "Queue successfully deleted";
 	}
+	
+	public int getCountByQueue(){
+		return queueDao.getCountByQueue();
+	}
 }

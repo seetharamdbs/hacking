@@ -17,6 +17,8 @@ import com.dbs.QueueImplementation.service.QueueService;
 @CrossOrigin
 public class QueueController {
 	
+	private int maxQueues = 10;
+	
 	@Autowired
 	private QueueService queueService;
 
@@ -57,4 +59,13 @@ public class QueueController {
 		} 
 		return queueService.getAllQueues();
 	}
+	
+	@RequestMapping(value="/queue/checkqueuesize",method=RequestMethod.GET)
+	public boolean maxQueueSizeReached(){
+		if(queueService.getCountByQueue()>maxQueues){
+			return true;
+		}
+		return false;
+	}
+	
 }

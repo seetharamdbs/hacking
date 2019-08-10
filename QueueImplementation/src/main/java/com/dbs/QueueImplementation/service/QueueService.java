@@ -18,4 +18,6 @@ public interface QueueService {
 	public List<Queue> getAllQueues();
 	
 	public String deleteQueue(@PathVariable int id);
+	
+	public int getCountByQueue();
 }
