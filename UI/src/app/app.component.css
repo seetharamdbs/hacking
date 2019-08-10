@@ -1,4 +1,6 @@
 button{
-    background-color: brown;
-    color: white
+    background-color: green;
+    color: white;
+    width: 150px;
+    text-align: center
 }
