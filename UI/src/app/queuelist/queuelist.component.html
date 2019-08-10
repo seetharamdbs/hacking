@@ -1,8 +1,20 @@
 
 <ol >
-  <button>Add Message</button><br>
-  <li *ngFor="let l of list">
-    {{l.name}} {{l.size}} 
-    <button>Consumed</button>
-  </li>
+  <button>Add Message</button><br><br>
+  <table>
+<tr>
+    <th>
+      Queue Name
+    </th>
+    <th>
+       No of. Messages
+      </th>
+      <th>
+         Actions
+         </th></tr>
+  
+  <tr *ngFor="let l of list">
+   <td> {{l.queueName}}</td> <td> {{l.size}} </td>
+   <td> <button>Consum message</button></td>
+  </tr></table>
 </ol>

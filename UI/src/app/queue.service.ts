@@ -19,7 +19,7 @@ export class QueueService {
   addQueue(name,size):Observable<any>{
     let body = '{ "queueName" : "'+name+'","size":'+size + ' }';
     let headers =  {headers: new  HttpHeaders({ 'Content-Type': 'application/json'})};
-    return this.http.post('http://localhost:8080/queue/addqueue', body, headers ).pipe(map((response: any) => response.json()));
+    return this.http.post('http://10.10.0.237:8080/queue/addqueueandgetall', body, headers ).pipe(map((response: any) => response));
 
   }
 }
