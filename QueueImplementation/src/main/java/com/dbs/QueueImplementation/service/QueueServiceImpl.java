@@ -33,11 +33,25 @@ public class QueueServiceImpl implements QueueService{
 			return false;
 		}
 		
-		if(messagesCountForQueue==queue.get().getSize()){
+		if(messagesCountForQueue>=queue.get().getSize()){
 			return true;
 		}
 		return false;
 	}
-	
+	@Override
+	public boolean isQueueEmpty(int id) {
+		Optional<Queue> queue = queueDao.findById(id);
+		
+		int messagesCountForQueue = messageDao.getCountByQueueId(id);
+		
+		if(!queue.isPresent()){
+			return false;
+		}
+		if(messagesCountForQueue==0){
+			return true;
+		}
+		
+		return false;
+	}
 	
 }

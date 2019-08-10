@@ -10,4 +10,6 @@ public interface QueueService {
 	public Queue addQueue(@RequestBody Queue queue);
 	
 	public boolean isQueueFull(int id);
+	
+	public boolean isQueueEmpty(int id);
 }

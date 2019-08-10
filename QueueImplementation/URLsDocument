@@ -9,5 +9,9 @@ http://localhost:8080/queue/addqueue  (POST)
 "size":200
 }
 
+http://localhost:8080/queue/isqueuefull/1  (POST)
+
+http://localhost:8080/queue/isqueueempty/1  (POST)
+
 Messages Services
 -----------------------------------------------

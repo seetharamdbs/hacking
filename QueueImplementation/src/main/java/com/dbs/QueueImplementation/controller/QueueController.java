@@ -30,4 +30,9 @@ public class QueueController {
 	public boolean isQueueFull(@PathVariable int id){
 		return queueService.isQueueFull(id);
 	}
+	
+	@RequestMapping(value="/queue/isqueueempty/{id}",method=RequestMethod.POST)
+	public boolean isQueueEmpty(@PathVariable int id){
+		return queueService.isQueueEmpty(id);
+	}
 }
